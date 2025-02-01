@@ -7,7 +7,7 @@ import java.util.Scanner;
 class UserInput {
     Scanner scan = new Scanner(System.in);
 
-    // Get input for two numbers
+    // Function to take input for two numbers
     int[] getTwoNumbers() {
         int[] numbers = new int[2];
         System.out.println("Enter the first number: ");
@@ -19,13 +19,13 @@ class UserInput {
         return numbers;
     }
 
-    // Get input for a single number
+    // Function to take input for a single number
     int getSingleNumber() {
         System.out.println("Enter a number: ");
         return scan.nextInt();
     }
 
-    // Get input for an array
+    // Function to take input for an array
     int[] getArrayInput() {
         System.out.println("Enter the size of the array: ");
         int size = scan.nextInt();
