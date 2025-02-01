@@ -9,6 +9,7 @@ class Main {
 
         int choice;
         do {
+            // Displaying menu for user selection
             System.out.println("\nSelect an operation:");
             System.out.println("1. Addition");
             System.out.println("2. Subtraction");
@@ -17,7 +18,8 @@ class Main {
             System.out.println("5. Fibonacci Sequence");
             System.out.println("6. Mean of Array");
             System.out.println("7. Variance of Array");
-            System.out.println("8. Exit");
+            System.out.println("8. Standard Deviation of Array");
+            System.out.println("9. Exit");
 
             choice = input.getSingleNumber(); // Get user's choice
 
@@ -44,11 +46,14 @@ class Main {
                     cal.variance(input.getArrayInput());
                     break;
                 case 8:
+                    cal.standardDeviation(input.getArrayInput());
+                    break;
+                case 9:
                     System.out.println("Exiting...");
                     break;
                 default:
                     System.out.println("Invalid choice. Try again.");
             }
-        } while (choice != 8);
+        } while (choice != 9);
     }
 }
